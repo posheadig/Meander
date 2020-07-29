@@ -91,7 +91,7 @@
       };
     };
     //YOUR TURN: add your Mapbox token 
-    mapboxgl.accessToken = 'sk.eyJ1IjoicG9zaGVhZGlnIiwiYSI6ImNrZDd0bG9oYzFtdTMzNmtjZjYxOGF1aTQifQ.C6mSZQxBP82iEA0lYKcpPw'; //Mapbox token 
+    mapboxgl.accessToken = sk.eyJ1IjoicG9zaGVhZGlnIiwiYSI6ImNrZDd0bG9oYzFtdTMzNmtjZjYxOGF1aTQifQ.C6mSZQxBP82iEA0lYKcpPw; //Mapbox token 
     var map = new mapboxgl.Map({
       container: 'map', // container id
       style: 'mapbox://styles/mapbox/streets-v11', //stylesheet location
@@ -104,7 +104,7 @@
       $.ajax({
         type: "GET",
         //YOUR TURN: Replace with csv export link
-        url: 'https://docs.google.com/spreadsheets/d/1MiqwGe_7m6B0xFQfaS3GGRO8CmGm5xlXPICDPEeGHyo/gviz/tq?tqx=out:cvs&sheet=Meander',
+        url: https://docs.google.com/spreadsheets/d/1MiqwGe_7m6B0xFQfaS3GGRO8CmGm5xlXPICDPEeGHyo/gviz/tq?tqx=out:cvs&sheet=Meander,
         dataType: "text",
         success: function (csvData) { makeGeoJSON(csvData); }
       });
